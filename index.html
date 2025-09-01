@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LifeTicker — Official Site</title>
+  <meta name="description" content="LifeTicker — count down to what matters. Get support, read the Privacy Policy, and view the Terms & Conditions." />
+  <meta property="og:title" content="LifeTicker — Official Site" />
+  <meta property="og:description" content="Support, Privacy Policy, and Terms & Conditions" />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0f172a" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* small landing-specific touches */
+    .hero {
+      display: grid;
+      gap: 12px;
+      padding: 28px 22px;
+      border-radius: var(--radius);
+      background: linear-gradient(180deg, #ffffff 0%, #f1f5f9 100%);
+      box-shadow: var(--shadow);
+    }
+    .hero h1 { font-size: 32px; margin: 0; }
+    .hero p { margin: 0; color: #475569; }
+    .cta-row { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 8px; }
+    .button {
+      display: inline-block;
+      padding: 12px 16px;
+      border-radius: 999px;
+      text-decoration: none;
+      border: 1px solid #e2e8f0;
+      box-shadow: var(--shadow);
+    }
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin-top: 22px;
+    }
+    .muted { color: #64748b; }
+    .legal-links { display: flex; gap: 16px; flex-wrap: wrap; }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <header class="header">
+      <div class="hero">
+        <h1>LifeTicker</h1>
+        <p class="subtitle">Count down to what matters — events, trips, concerts, milestones.</p>
+        <div class="cta-row">
+          <a class="button" href="support.html">Get Support</a>
+          <a class="button" href="privacy.html">Privacy Policy</a>
+          <a class="button" href="terms.html">Terms &amp; Conditions</a>
+        </div>
+      </div>
+    </header>
+
+    <section class="grid-3">
+      <a class="card" href="support.html">
+        <h2>Support</h2>
+        <p>Need help or have feedback? Contact us and see quick FAQs.</p>
+      </a>
+      <a class="card" href="privacy.html">
+        <h2>Privacy</h2>
+        <p>How LifeTicker handles your data. No tracking. iCloud private sync.</p>
+      </a>
+      <a class="card" href="terms.html">
+        <h2>Terms</h2>
+        <p>Understand your rights and obligations when using LifeTicker.</p>
+      </a>
+    </section>
+
+    <footer class="footer">
+      <p class="muted">&copy; 2025 Christoph Bodynek — LifeTicker</p>
+      <p class="muted legal-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms &amp; Conditions</a>
+        <a href="support.html">Support</a>
+      </p>
+    </footer>
+  </main>
+</body>
+</html>
